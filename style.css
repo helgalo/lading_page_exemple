@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  color: #1e293b;
+  background-color: #f8fafc;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.cabecalho {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 1rem 0;
+}
+
+.container-cabecalho {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 800;
+  text-decoration: none;
+  color: #0f172a;
+  letter-spacing: -0.5px;
+}
+
+.logo span {
+  color: #d400ff;
+}
+
+.menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.2rem;
+  list-style: none;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #475569;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.menu a:hover {
+  color: #b700ff;
+}
+
+
+.hero {
+  padding: 2.5rem 0;
+  background: linear-gradient(180deg, #ffffff 0%, #f1f5f9 100%);
+}
+
+.container-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+}
+
+.hero-conteudo h1 {
+  font-size: 1.9rem;
+  color: #0f172a;
+  line-height: 1.25;
+  margin-bottom: 1rem;
+}
+
+.hero-conteudo p {
+  color: #64748b;
+  font-size: 1.05rem;
+  margin-bottom: 1.75rem;
+}
+
+.btn-destaque {
+  display: inline-block;
+  background-color: #9f00c6;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.85rem 1.75rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.25);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn-destaque:hover {
+  background-color: #8000bc;
+  transform: translateY(-2px);
+}
+
+.hero-imagem {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08);
+}
+
+.secao-cartoes {
+  padding: 3rem 0;
+}
+
+.secao-titulo {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.secao-titulo h2 {
+  font-size: 1.75rem;
+  color: #0f172a;
+  margin-bottom: 0.5rem;
+}
+
+.secao-titulo p {
+  color: #64748b;
+}
+
+.grade-cartoes {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.cartao {
+  background-color: #ffffff;
+  padding: 1.75rem;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cartao:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 20px -3px rgba(0, 0, 0, 0.08);
+}
+
+.cartao-icone {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.cartao h3 {
+  font-size: 1.25rem;
+  color: #0f172a;
+  margin-bottom: 0.5rem;
+}
+
+.cartao p {
+  color: #64748b;
+  font-size: 0.95rem;
+}
+
+.rodape {
+  background-color: #0f172a;
+  color: #94a3b8;
+  padding: 2rem 0;
+  border-top: 1px solid #1e293b;
+}
+
+.container-rodape {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.sobre {
+  padding: 3rem 0;
+  background-color: #f8fafc;
+}
+
+.sobre-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 2.5rem;
+}
+
+.sobre-conteudo {
+  max-width: 700px;
+}
+
+.sobre-conteudo h2 {
+  font-size: 1.75rem;
+  color: #0f172a;
+  margin-bottom: 1rem;
+}
+
+.sobre-conteudo p {
+  color: #64748b;
+  font-size: 1.05rem;
+  margin-bottom: 1rem;
+}
+
+.sobre-imagem {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08);
+}
+
+.sobre-imagem img {
+  width: 100%;
+  height: auto;
+}
+
+
+@media (min-width: 768px) {
+
+  .container-cabecalho {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu ul {
+    gap: 1.8rem;
+  }
+
+  .container-hero {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    padding: 3rem 1.25rem;
+  }
+
+  .hero-conteudo {
+    flex: 1;
+    padding-right: 2rem;
+  }
+
+  .hero-conteudo h1 {
+    font-size: 2.75rem;
+  }
+
+  .hero-imagem {
+    flex: 1;
+    max-width: 500px;
+  }
+
+  .grade-cartoes {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+
+  .container-rodape {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+}

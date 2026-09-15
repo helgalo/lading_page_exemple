@@ -1,0 +1,133 @@
+<!-- O QUE A PÁGINA PRECISA TER
+· Um cabeçalho com logo à esquerda e menu à direita, alinhados na mesma altura (Flexbox).
+· Uma seção de destaque (hero) com título, texto e um botão.
+· Uma seção com pelo menos três cartões que ficam lado a lado no computador e empilhados no celular.
+· Um rodapé.
+· Pelo menos uma imagem, que não pode estourar o layout em nenhuma largura. -->
+
+<!-- REQUISITOS TÉCNICOS
+· Escrito mobile-first: o CSS base é o do celular, e as media queries usam min-width.
+· A meta-tag viewport no <head>.
+· Flexbox ou Grid para o layout — não use position para montar a estrutura.
+· max-width: 100% em toda imagem.
+· CSS em arquivo separado (style.css), sem style inline. -->
+
+<!-- COMO ENTREGAR
+Envie o link do repositório no GitHub (com GitHub Pages publicado, se conseguir) ou o arquivo .zip com o HTML, o CSS e
+as imagens.
+
+Vale 0,5 ponto na AV1.
+
+· Layout com Flexbox ou Grid, sem position para estrutura
+· Mobile-first: base para celular e media query com min-width
+· Meta-tag viewport presente
+· Imagens fluidas, sem estourar em nenhuma largura
+· CSS em arquivo separado, sem style inline -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apollo I.O - Inovação e Soluções Digitais</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <div class="container container-cabecalho">
+            <a href="#" class="logo">Apollo<span> I.O</span></a>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="container container-hero">
+                <div class="hero-conteudo">
+                    <h1>Soluções Digitais para o Futuro do seu Negócio</h1>
+                    <p>
+                        Construímos interfaces modernas, rápidas e totalmente responsivas para alavancar a presença
+                        digital da sua marca.
+                    </p>
+                    <a href="#servicos" class="btn-destaque">Explorar Serviços</a>
+                </div>
+                <div class="hero-imagem">
+                    <img src="hero.jpg" alt="Ilustração moderna de ambiente de tecnologia e computação em nuvem">
+                </div>
+            </div>
+        </section>
+
+        <section id="servicos" class="secao-cartoes">
+            <div class="container">
+                <div class="secao-titulo">
+                    <h2>Nossos Serviços</h2>
+                    <p>Soluções completas pensadas em cada detalhe</p>
+                </div>
+
+                <div class="grade-cartoes">
+                    <article class="cartao">
+                        <div class="cartao-icone">💻</div>
+                        <h3>Desenvolvimento Web</h3>
+                        <p>Landing pages e aplicações web construídas com as tecnologias mais recentes, código limpo e
+                            carregamento ultrarrápido.</p>
+                    </article>
+
+                    <article class="cartao">
+                        <div class="cartao-icone">📱</div>
+                        <h3>Design Responsivo</h3>
+                        <p>Layouts inteligentes que se adaptam com perfeição em qualquer dispositivo, desde smartphones
+                            compactos até monitores ultra-wide.</p>
+                    </article>
+
+                    <article class="cartao">
+                        <div class="cartao-icone">⚡</div>
+                        <h3>Alta Performance</h3>
+                        <p>Otimização minuciosa de performance e boas práticas de SEO para garantir que sua página
+                            alcance as melhores posições.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="sobre">
+            <div class="container sobre-container">
+                <div class="sobre-conteudo">
+                    <h2>Sobre Nós</h2>
+                    <p>
+                        Apollo I.O é uma empresa de tecnologia dedicada a fornecer soluções digitais inovadoras para
+                        negócios de todos os tamanhos.
+                    </p>
+                    <p>
+                        Com uma equipe de desenvolvedores experientes, estamos comprometidos em fornecer serviços de
+                        alta
+                        qualidade que atendam às necessidades dos nossos clientes.
+                    </p>
+                    <h3>Nossa sede:</h3>
+                </div>
+                <div class="sobre-imagem">
+                    <img src="escritorio.jpg" alt="Escritório sede da Apollo I.O">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contato" class="rodape">
+        <div class="container container-rodape">
+            <p>&copy; 2026 Apollo I.O Todos os direitos reservados.</p>
+            <p>Desenvolvido para a avaliação prática da Aula 04.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
